@@ -4,7 +4,7 @@ const Card = (props) => {
   const { foods, setFoods, index, food } = props;
   let example = "";
   if (index == 0) {
-    example = " - Total Calories";
+    example = " - Total Calories per 100g";
   }
 
   const handleDelete = () => {
@@ -16,7 +16,7 @@ const Card = (props) => {
       <div className="w-[500px] bg-[#b497d61a] flex flex-col pl-2 pt-2 my-2 rounded-md">
         <p>{food.FoodName}</p>
         <p className="text-[1.3rem] font-bold">
-          {food.Calories} KJ {example}
+          {food.Calories} kcal {example}
         </p>
         <div className="flex gap-5 pb-2 opacity-80">
           <p>Protein : {food.Protein}g</p>

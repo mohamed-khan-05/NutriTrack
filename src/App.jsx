@@ -29,6 +29,9 @@ const App = () => {
       {...swipeHandlers}
       className="w-[100vw] h-[100vh] flex flex-col items-center bg-[#170218] text-white select-none"
     >
+      <div className="mt-6 mb-2 text-[1.5rem] font-bold">
+        <h1>NutriTrack</h1>
+      </div>
       <div className="flex absolute bottom-20 gap-5 mb-8">
         <button
           className="text-[1.1rem] font-semibold"
@@ -50,7 +53,9 @@ const App = () => {
       </div>
 
       {tab === "d" ? (
-        <List foods={foods} setFoods={setFoods} />
+        <div className="flex justify-center">
+          <List foods={foods} setFoods={setFoods} />
+        </div>
       ) : (
         <div className="mt-[20px] translate-y-[100px]">
           <h1 className="text-center text-[1.3rem] font-semibold mb-8">

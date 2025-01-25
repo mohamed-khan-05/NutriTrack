@@ -15,9 +15,9 @@ const BMR = () => {
     }
 
     if (gender === "Male") {
-      setAns(10 * Weight + 6.25 * Height - (5 * Age + 5));
+      setAns(10 * Weight + 6.25 * Height - 5 * Age + 5);
     } else {
-      setAns(10 * Weight + 6.25 * Height - (5 * Age - 16));
+      setAns(10 * Weight + 6.25 * Height - 5 * Age - 16);
     }
   };
   return (
